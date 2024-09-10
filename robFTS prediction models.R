@@ -4,7 +4,6 @@ library(readxl)
 library(tidyverse)
 library(xgboost)
 library(caret)
-library(readxl)
 library(ggplot2)
 library(lubridate)
 library(keras)
@@ -31,7 +30,7 @@ library(robflreg)
 
 # Import the dataframe of Venue
 
-df_all <- read.xlsx("data/Employee Presence data.xlsx", sheet = 2)
+df_all <- read.xlsx("data/Employee Presence data.xlsx")
 
 #Data cleaning and processing 
  

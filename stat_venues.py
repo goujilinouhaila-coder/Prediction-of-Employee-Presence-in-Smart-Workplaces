@@ -14,7 +14,7 @@ X = np.zeros((50,3,5))
 for i in range(0,250,5):
     X[i//5,0,:] = df.iloc[i:(i+5),1] # venues
     X[i//5,1,:] = df.iloc[i:(i+5),13]  # temp
-    # X[i//5,2,:] = df.iloc[i:(i+5),14] / 15  # pluie
+    # X[i//5,2,:] = df.iloc[i:(i+5),14] / 15  # precip.
     X[i//5,2,:] = df.iloc[i:(i+5),19] /100# resa
 
 def audessus100(X):
@@ -37,8 +37,8 @@ Xapp = np.zeros((n-2,2*44,5))
 Yapp = np.zeros((n-2,5))
 for i in range(n-2):
     for j in range(i):
-        Xapp[i,2*j,:] = X[j,0,:] #venue (order2)
-        # Xapp[i,4*j+3,:] = X[j+1,0,:] # venue décalée (order1)
+        Xapp[i,2*j,:] = X[j,0,:] #venue lagged (order2)
+        # Xapp[i,4*j+3,:] = X[j+1,0,:] # venue lagged (order1)
         # Xapp[i,4*j+1,:] = X[j,1,:] #temp
         Xapp[i,2*j+1,:] = X[j,2,:] #resa
     Yapp[i,:] = X[i+2,0,:]

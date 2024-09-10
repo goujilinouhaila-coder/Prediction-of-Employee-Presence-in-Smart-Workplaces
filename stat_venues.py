@@ -46,5 +46,5 @@ for i in range(n-2):
 Xapp = Xapp.swapaxes(1,-1)
 
 
-with open('venues.dat', 'wb') as f:
+with open('data/venues.dat', 'wb') as f:
     pickle.dump((Xapp,Yapp), f)

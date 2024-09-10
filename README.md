@@ -1,7 +1,7 @@
 # Prediction-of-Employee-Presence-in-Smart-Workplaces
 An Approach Integrating Functional Data and Exogenous Variables.
 
-**About the robFTS prediction models**
+**1. About the robFTS prediction models**
 
 We propose an approach that adapts the robust function-on-function regression to time series (RobFTS). 
 The RobFTS model can be applied to predict the presence of workers in a tertiary building.

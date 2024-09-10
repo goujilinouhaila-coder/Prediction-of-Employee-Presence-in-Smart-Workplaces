@@ -1,5 +1,5 @@
 # Prediction-of-Employee-Presence-in-Smart-Workplaces
-An Approach Integrating Functional Data and Exogenous Variables
+An Approach Integrating Functional Data and Exogenous Variables.
 
 **About the robFTS prediction models**
 

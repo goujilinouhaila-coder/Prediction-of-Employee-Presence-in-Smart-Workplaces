@@ -94,12 +94,12 @@ weeks_removed
 
 #### import meteo ####
 
-meteo <- read.xlsx("export-paris0.xlsx", sheet = 2)
+meteo <- read.xlsx("data/export-paris0.xlsx", sheet = 2)
 meteo$DATE <- as.Date(meteo$DATE, origin = "1899-12-30")
 colnames(meteo)[1] <- colnames(df_completes)[1]
 
 ## import greve ### 
-greve <- read.csv("archive_greve.csv", sep=";")
+greve <- read.csv("data/archive_greve.csv", sep=";")
 greve$Date <- as.Date(greve$Date, format = "%d/%m/%Y")
 colnames(greve)[1] <- colnames(df_completes)[1]
 

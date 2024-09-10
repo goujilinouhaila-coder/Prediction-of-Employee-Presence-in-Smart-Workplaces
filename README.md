@@ -33,6 +33,6 @@ The four modules of our new network architecture are:
 The last module is not represented in the figure below as it is more a loss term added to the general loss than a proper network. You can read more about this architecture in [this paper](https://arxiv.org/abs/2106.10414).
 
 
-<img src="./images/DFMM_Network_Architecture.png" alt="Network Architecture Diagram" width="400" height="300" />
+<img src="./images/DFMM_Network_Architecture.png" alt="Network Architecture Diagram" width="500" height="500" />
 
 

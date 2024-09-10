@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import pickle
 
-df = pd.read_csv("df_venues_processed.csv",sep=";")
+df = pd.read_csv("data/df_venues_processed.csv",sep=";")
 print(df.info())
 
 print(df.head())

@@ -33,4 +33,5 @@ The four modules of our new network architecture are:
 The last module is not represented in the figure below as it is more a loss term added to the general loss than a proper network. You can read more about this architecture in [this paper](https://arxiv.org/abs/2106.10414).
 
 
-![Network Architecture Diagram](./images/DFMM Network Architecture.png)
+![Network Architecture Diagram](./images/DFMM%20Network%20Architecture.png)
+

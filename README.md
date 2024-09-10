@@ -18,3 +18,19 @@ Y_{n+1}(t) = \sum_{l=1}^L \int_I \beta_l(s,t) Y_{n+1-l}(s) \mathrm{d}s
 ```
 
 where $L$ is the number of lagged variables used, $\beta_l$ for $l=1,\ldots,L$, and $\gamma_k$ for $k=1,\ldots,K$ are the functional parameters to be estimated.
+
+**2. About DFMM prediction model**
+
+# Network Architecture
+
+The four modules of our new network architecture are:
+
+1. The transformation module is made of $N$ transformer encoders.
+2. The Deep Functional Network that outputs the scores of multivariate functional variables.
+3. Fully Connected Layers to reduce the dimension.
+4. A regularisation module with a $L^2$ loss on the acceleration of parameters to produce the output.
+
+The last module is not represented in the figure below as it is more a loss term added to the general loss than a proper network. You can read more about this architecture in [this paper](https://arxiv.org/abs/2106.10414).
+
+
+![Network Architecture Diagram](./images/DFMM Network Architecture.png)
